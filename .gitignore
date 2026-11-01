@@ -1,0 +1,41 @@
+# --- Confidential: never publish -------------------------------------------
+# Internal product docs (PRD, roadmap, architecture, data model, AI engine)
+internal/
+private/
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+secrets/
+credentials*.json
+*.secret
+# AI tooling sessions, prompts and caches
+.claude/
+.codex/
+.cursor/
+.gemini/
+.aider*
+CLAUDE.md
+AGENTS.md
+*.prompt.md
+# Raw design sources (only optimised assets in site/assets are published)
+design-src/
+*.psd
+*.fig
+
+# --- Build / OS / editor noise ---------------------------------------------
+node_modules/
+dist/
+.next/
+.turbo/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

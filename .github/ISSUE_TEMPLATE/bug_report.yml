@@ -1,0 +1,50 @@
+name: Bug report
+description: Something does not work as expected.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. **Never paste API keys or tokens** into this form.
+        For security issues, use [private vulnerability reporting](https://github.com/datarecoveryexpert/shelfdeck/security/advisories/new) instead.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Web app
+        - Mobile app
+        - Browser extension
+        - Cover engine
+        - Sync engine / vault
+        - Local CLI bridge
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Paste https://github.com/owner/repo
+        2. Open the item
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "ShelfDeck version, browser / OS"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      render: text

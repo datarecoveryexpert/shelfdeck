@@ -1,0 +1,33 @@
+name: New source or image-provider adapter
+description: Propose support for a new source (GitLab, PyPI, Civitai…) or image provider.
+labels: ["adapter"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Adapter type
+      options:
+        - Source adapter (packages/core/sources)
+        - Image provider adapter (packages/cover-engine/providers)
+    validations:
+      required: true
+  - type: input
+    id: service
+    attributes:
+      label: Service
+      placeholder: "e.g. Codeberg, crates.io, Stability AI"
+    validations:
+      required: true
+  - type: textarea
+    id: api
+    attributes:
+      label: API details
+      description: Public endpoints, authentication, rate limits and the metadata you would map.
+    validations:
+      required: true
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to implement this adapter myself.

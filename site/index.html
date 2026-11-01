@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShelfDeck · Your dev library, as a media center</title>
+  <meta name="description" content="ShelfDeck turns GitHub stars, Hugging Face models and dev tools into a visual, searchable poster wall with quiet release tracking. Local-first, open source, no account required.">
+  <meta name="author" content="a.ceyhan · GOLD DATA Teknoloji">
+  <meta name="theme-color" content="#FAF8F4">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-mark.png">
+  <link rel="canonical" href="https://datarecoveryexpert.github.io/shelfdeck/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ShelfDeck · Your dev library, as a media center">
+  <meta property="og:description" content="A local-first, media-center style library and release tracker for GitHub repos, Hugging Face models and dev tools.">
+  <meta property="og:url" content="https://datarecoveryexpert.github.io/shelfdeck/">
+  <meta property="og:image" content="https://datarecoveryexpert.github.io/shelfdeck/assets/img/social-preview.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ShelfDeck",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "description": "A local-first, media-center style personal library and release tracker for GitHub repositories, Hugging Face models and developer tools.",
+    "license": "https://opensource.org/licenses/MIT",
+    "codeRepository": "https://github.com/datarecoveryexpert/shelfdeck",
+    "author": { "@type": "Person", "name": "a.ceyhan", "email": "a.ceyhan@goldverikurtarma.com", "jobTitle": "Forensic Expert", "url": "https://github.com/datarecoveryexpert" },
+    "publisher": { "@type": "Organization", "name": "GOLD DATA Teknoloji", "url": "https://www.goldverikurtarma.com" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="ShelfDeck home">
+        <img src="assets/img/logo-mark.png" alt="" width="32" height="32">
+        <span>ShelfDeck</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#screens">Product</a>
+        <a href="#tiers">How it works</a>
+        <a href="#covers">Cover engine</a>
+        <a href="#roadmap">Roadmap</a>
+        <a class="btn btn--ghost btn--sm" href="https://github.com/datarecoveryexpert/shelfdeck">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 .2a8 8 0 0 0-2.5 15.6c.4 0 .5-.2.5-.4v-1.5c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8a7.5 7.5 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.6 3.9.3.3.6.8.6 1.5v2.2c0 .2.1.5.6.4A8 8 0 0 0 8 .2Z"/></svg>
+          Star on GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/img/hero.jpg" alt="">
+      </div>
+      <div class="wrap hero__content">
+        <p class="eyebrow"><span class="dot"></span> Open source · Pre-alpha · MIT</p>
+        <h1>Your dev library,<br><em>as a media center.</em></h1>
+        <p class="lead">ShelfDeck turns GitHub stars, Hugging Face models and dev tools into a visual, searchable poster wall, with release tracking that stays out of your inbox. No account needed to start.</p>
+        <form class="paste" onsubmit="return false" aria-label="Demo URL input">
+          <span class="paste__icon" aria-hidden="true">+</span>
+          <input type="url" placeholder="Paste a GitHub or Hugging Face URL…" aria-label="Repository URL" disabled>
+          <span class="paste__hint">coming soon</span>
+        </form>
+        <div class="cta">
+          <a class="btn btn--primary" href="https://github.com/datarecoveryexpert/shelfdeck">Follow the build on GitHub</a>
+          <a class="btn btn--ghost" href="#screens">See the screens</a>
+        </div>
+        <ul class="hero__facts" aria-label="Key facts">
+          <li><strong>0</strong> accounts required</li>
+          <li><strong>$0</strong> backend cost</li>
+          <li><strong>100%</strong> your data</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="section" id="showcase" aria-labelledby="showcase-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Poster wall</p>
+          <h2 id="showcase-title">The projects you starred, finally on display.</h2>
+          <p class="sub">Popular open-source tools and models as ShelfDeck would shelve them: real banners where projects have one, procedural posters where they don't.</p>
+        </header>
+        <figure class="shot">
+          <img src="assets/img/showcase-wall.jpg" alt="Poster wall of popular open-source projects and AI models arranged on four shelves" loading="lazy" width="1536" height="1024">
+          <figcaption>Design concept. Project names belong to their respective owners.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">The problem</p>
+          <h2>Stars are where good libraries go to be forgotten.</h2>
+          <p class="sub">You save 20 repos a week. A month later you can't remember why, which project they were for, or that one of them shipped a breaking <code>v2.0</code>.</p>
+        </header>
+        <div class="problems">
+          <article class="card">
+            <span class="card__num">01</span>
+            <h3>The star graveyard</h3>
+            <p>Flat, chronological lists with no personal context. ShelfDeck adds shelves, tags, notes and an adoption status to every item.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">02</span>
+            <h3>No visual memory</h3>
+            <p><code>owner/repo</code> strings all look alike. Every item gets a poster, so you recognise it at a glance.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">03</span>
+            <h3>Missed releases</h3>
+            <p>Watching floods your inbox. ShelfDeck keeps a quiet feed for the items you track and flags breaking changes.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">04</span>
+            <h3>Scattered devices</h3>
+            <p>Discover on the phone, build on the laptop. Optional sync runs through a private repo in your own GitHub account.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENS -->
+    <section class="section" id="screens">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">The product</p>
+          <h2>Browse like a film collection. Decide like an engineer.</h2>
+          <p class="sub">A poster wall when you want to explore, dense views when you need to choose. Every view below is part of the plan.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Product screens">
+          <button role="tab" aria-selected="true" aria-controls="panel-home" id="tab-home">Home</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-grid" id="tab-grid" tabindex="-1">Poster grid</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-detail" id="tab-detail" tabindex="-1">Detail</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-table" id="tab-table" tabindex="-1">Table</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-kanban" id="tab-kanban" tabindex="-1">Kanban</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-releases" id="tab-releases" tabindex="-1">Releases</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-radar" id="tab-radar" tabindex="-1">Tech radar</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-health" id="tab-health" tabindex="-1">Health</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-compare" id="tab-compare" tabindex="-1">Compare</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-stacks" id="tab-stacks" tabindex="-1">Stacks</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-palette" id="tab-palette" tabindex="-1">Ctrl K</button>
+          <button role="tab" aria-selected="false" aria-controls="panel-mobile" id="tab-mobile" tabindex="-1">Mobile</button>
+        </div>
+
+        <div class="screen">
+          <figure class="shot" role="tabpanel" id="panel-home" aria-labelledby="tab-home">
+            <img src="assets/img/ui-home.jpg" alt="Home screen with paste-a-URL bar and Kodi-style shelf rows" width="1536" height="1024">
+            <figcaption>Paste a URL, then browse shelf rows: Recently Added, Want to Try, Local LLMs, Image &amp; Voice Models.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-grid" aria-labelledby="tab-grid" hidden>
+            <img src="assets/img/ui-grid.jpg" alt="Poster grid with facet filters for source, language, task, license, status and shelf" loading="lazy" width="1536" height="1024">
+            <figcaption>Filter by source, language, task, license, status and shelf. Instant, offline search.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-detail" aria-labelledby="tab-detail" hidden>
+            <img src="assets/img/ui-detail.jpg" alt="Backdrop detail view of llama.cpp with notes, AI brief, releases and relationships" loading="lazy" width="1536" height="1024">
+            <figcaption>Backdrop detail: notes, AI technical brief, releases, relationships and quick actions.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-table" aria-labelledby="tab-table" hidden>
+            <img src="assets/img/ui-table.jpg" alt="Dense sortable table view with health dots and bulk tag editor" loading="lazy" width="1536" height="1024">
+            <figcaption>Sortable columns, maintenance health and a bulk tag editor.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-kanban" aria-labelledby="tab-kanban" hidden>
+            <img src="assets/img/ui-kanban.jpg" alt="Kanban board with adoption status columns" loading="lazy" width="1536" height="1024">
+            <figcaption>Drag items from Inbox to Using. Archived items remember what replaced them.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-releases" aria-labelledby="tab-releases" hidden>
+            <img src="assets/img/ui-releases.jpg" alt="Release feed with breaking change flags" loading="lazy" width="1536" height="1024">
+            <figcaption>A quiet release feed for tracked items, with breaking changes flagged.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-radar" aria-labelledby="tab-radar" hidden>
+            <img src="assets/img/ui-radar.jpg" alt="Technology radar with four quadrants and adoption rings" loading="lazy" width="1536" height="1024">
+            <figcaption>Your personal tech radar: Languages, Frameworks, Tools and Models.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-health" aria-labelledby="tab-health" hidden>
+            <img src="assets/img/ui-health.jpg" alt="Library health dashboard with license distribution and stale items" loading="lazy" width="1536" height="1024">
+            <figcaption>Stale items, license distribution and compatibility warnings at a glance.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-compare" aria-labelledby="tab-compare" hidden>
+            <img src="assets/img/ui-compare.jpg" alt="Side-by-side comparison of llama.cpp, ollama and open-webui" loading="lazy" width="1536" height="1024">
+            <figcaption>Compare up to four alternatives side by side before you commit.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-stacks" aria-labelledby="tab-stacks" hidden>
+            <img src="assets/img/ui-stacks.jpg" alt="Stack builder showing a RAG pipeline with relationship arrows" loading="lazy" width="1536" height="1024">
+            <figcaption>Stacks are recipes: group items into a project and record how they relate.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-palette" aria-labelledby="tab-palette" hidden>
+            <img src="assets/img/ui-palette.jpg" alt="Command palette searching speech to text" loading="lazy" width="1536" height="1024">
+            <figcaption>Ctrl K: "I need a library that does X" across titles, tags, notes and briefs.</figcaption>
+          </figure>
+          <figure class="shot" role="tabpanel" id="panel-mobile" aria-labelledby="tab-mobile" hidden>
+            <img src="assets/img/ui-mobile.jpg" alt="Three mobile screens: poster grid, detail and share sheet" loading="lazy" width="1536" height="1024">
+            <figcaption>Save from any app through the Share Sheet and browse offline.</figcaption>
+          </figure>
+        </div>
+        <p class="note">Screens are design mockups of the planned product.</p>
+      </div>
+    </section>
+
+    <!-- TIERS -->
+    <section class="section section--alt" id="tiers">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">How it works</p>
+          <h2>Start instantly. Grow only if you want to.</h2>
+        </header>
+        <ol class="tiers">
+          <li class="tier">
+            <img src="assets/img/tier-1.png" alt="" width="96" height="96" loading="lazy">
+            <span class="tier__label">Tier 1 · No login</span>
+            <h3>Instant local library</h3>
+            <p>Paste a URL. Metadata is fetched once from public APIs and stored in your browser. Shelves, notes and search all work offline.</p>
+          </li>
+          <li class="tier">
+            <img src="assets/img/tier-2.png" alt="" width="96" height="96" loading="lazy">
+            <span class="tier__label">Tier 2 · Your API keys</span>
+            <h3>Release tracking &amp; AI covers</h3>
+            <p>Add a GitHub or Hugging Face token to import stars and likes, track releases and generate covers. Keys never leave your device.</p>
+          </li>
+          <li class="tier">
+            <img src="assets/img/tier-3.png" alt="" width="96" height="96" loading="lazy">
+            <span class="tier__label">Tier 3 · GitHub connect</span>
+            <h3>Sync &amp; share</h3>
+            <p>A private <code>shelfdeck-vault</code> repo syncs Web, iOS and Android. A GitHub Action polls releases. Publish shelves to Pages.</p>
+          </li>
+        </ol>
+        <figure class="shot wide">
+          <img src="assets/img/ui-settings.jpg" alt="Settings screen showing the three tiers: local library, API keys and GitHub vault" loading="lazy" width="1536" height="1024">
+          <figcaption>All three tiers live in Settings. Nothing is required beyond Tier 1.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Features</p>
+          <h2>Built for people who actually ship.</h2>
+        </header>
+        <div class="features">
+          <div class="feature"><h3>Command palette</h3><p><kbd>Ctrl</kbd> <kbd>K</kbd> across shelves, tags, notes and README summaries.</p></div>
+          <div class="feature"><h3>Deep metadata</h3><p>Stars, license, language, topics, releases, parameter counts, tasks and quantizations.</p></div>
+          <div class="feature"><h3>Smart collections</h3><p>Rule-based shelves like "Rust CLI tools, MIT, added in the last 3 months".</p></div>
+          <div class="feature"><h3>Find alternative</h3><p>Surface similar items you already saved, side by side in a comparison view.</p></div>
+          <div class="feature"><h3>Stacks</h3><p>Group items into project recipes and record "replaces" and "depends on" links.</p></div>
+          <div class="feature"><h3>License &amp; risk</h3><p>Compatibility warnings, health badges and breaking-change flags.</p></div>
+          <div class="feature"><h3>Browser extension</h3><p>One-click "Save to ShelfDeck" on GitHub and Hugging Face pages.</p></div>
+          <div class="feature"><h3>Awesome-list export</h3><p>Turn any shelf into a polished <code>AWESOME.md</code> or a public gallery.</p></div>
+        </div>
+        <div class="pair">
+          <figure class="shot">
+            <img src="assets/img/ui-extension.jpg" alt="Browser extension popup saving astral-sh/uv to a shelf" loading="lazy" width="1536" height="1024">
+            <figcaption>Save from GitHub or Hugging Face in one click.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/ui-share.jpg" alt="Sharing a shelf as a GitHub Pages gallery or an awesome-list" loading="lazy" width="1536" height="1024">
+            <figcaption>Share a shelf as a Pages gallery or an awesome-list.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVERS -->
+    <section class="section section--alt" id="covers">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">Cover engine</p>
+          <h2>Every repo deserves a poster.</h2>
+          <p class="sub">Most repositories have no artwork, so ShelfDeck makes some, on your device.</p>
+          <ol class="steps">
+            <li><strong>Extract.</strong> Real social previews and README banners, with boilerplate cards and badges filtered out.</li>
+            <li><strong>Procedural.</strong> Instant, deterministic SVG posters in themes like <em>Criterion Dev</em> and <em>Terminal Blueprint</em>.</li>
+            <li><strong>AI.</strong> Use the <code>codex</code> or <code>gemini</code> CLI you already pay for, or bring your own image API key.</li>
+          </ol>
+        </div>
+        <figure class="shot"><img src="assets/img/cover-engine.jpg" alt="Diagram of the three-tier cover pipeline" loading="lazy" width="1536" height="1024"></figure>
+      </div>
+      <div class="wrap pair">
+        <figure class="shot">
+          <img src="assets/img/poster-themes.jpg" alt="Procedural poster themes: Criterion Dev, Terminal Blueprint, Model Spec Card" loading="lazy" width="1536" height="1024">
+          <figcaption>Built-in procedural themes, open to community contributions.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/img/ui-cover-studio.jpg" alt="Cover studio dialog with procedural, local CLI and BYOK image API options" loading="lazy" width="1536" height="1024">
+          <figcaption>Cover studio: procedural, local CLI bridge or your own image API.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="section">
+      <div class="wrap privacy">
+        <div class="privacy__item"><h3>No ShelfDeck server</h3><p>Your library lives in your browser or in your own GitHub repo. There is no central user database.</p></div>
+        <div class="privacy__item"><h3>Keys stay local</h3><p>Tokens go only to their own API endpoints and are never committed to any repository.</p></div>
+        <div class="privacy__item"><h3>Plain JSON, forever</h3><p>The vault is sharded JSON and WebP files. If ShelfDeck disappears, your data does not.</p></div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section section--alt" id="roadmap">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Roadmap</p>
+          <h2>Shipped when it's ready.</h2>
+        </header>
+        <ol class="roadmap">
+          <li class="is-active"><span>Phase 1</span><h3>Web MVP</h3><p>Local library, procedural covers, views, project site.</p></li>
+          <li><span>Phase 2</span><h3>Extension &amp; tokens</h3><p>Browser extension, bulk import, release tracking.</p></li>
+          <li><span>Phase 3</span><h3>Vault sync</h3><p>Git-backed sync, release Action, public shelves.</p></li>
+          <li><span>Phase 4</span><h3>Cover studio</h3><p>Local CLI bridge and multi-provider image APIs.</p></li>
+          <li><span>Phase 5</span><h3>Mobile</h3><p>iOS &amp; Android with Share Sheet capture.</p></li>
+          <li><span>Phase 6</span><h3>Ecosystem</h3><p>Package registries, AI digest, theme marketplace.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- BRAND -->
+    <section class="section" id="brand">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="kicker">Brand</p>
+          <h2>A bright gallery for your stack.</h2>
+          <p class="sub">Paper and ink for calm, amber for the spotlight, teal for what's healthy. Posters bring the colour.</p>
+        </header>
+        <div class="brand-grid">
+          <figure class="shot"><img src="assets/img/brand-sheet.jpg" alt="ShelfDeck brand sheet with logo, colours and typography" loading="lazy" width="1536" height="1024"></figure>
+          <div class="swatches">
+            <div class="swatch"><i style="background:#FAF8F4"></i><span>Paper <code>#FAF8F4</code></span></div>
+            <div class="swatch"><i style="background:#14161C"></i><span>Ink <code>#14161C</code></span></div>
+            <div class="swatch"><i style="background:#F2A516"></i><span>Amber <code>#F2A516</code></span></div>
+            <div class="swatch"><i style="background:#0E8F80"></i><span>Teal <code>#0E8F80</code></span></div>
+            <div class="swatch"><i style="background:#E5533D"></i><span>Coral <code>#E5533D</code></span></div>
+            <div class="swatch"><i style="background:#5B606B"></i><span>Graphite <code>#5B606B</code></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-band">
+      <div class="wrap cta-band__inner">
+        <h2>Help build the library you wish you had.</h2>
+        <p class="sub">Poster themes, source adapters, image providers and translations are all open for contributors.</p>
+        <div class="cta">
+          <a class="btn btn--accent" href="https://github.com/datarecoveryexpert/shelfdeck">Star the repo</a>
+          <a class="btn btn--ghost" href="https://github.com/datarecoveryexpert/shelfdeck/blob/main/CONTRIBUTING.md">Contributing guide</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="brand" href="#top"><img src="assets/img/logo-mark.png" alt="" width="24" height="24"><span>ShelfDeck</span></a>
+      <p>MIT License · © 2026 <a href="https://www.goldverikurtarma.com">GOLD DATA Teknoloji</a> · Built by <a href="https://github.com/datarecoveryexpert">a.ceyhan</a> · <a href="mailto:a.ceyhan@goldverikurtarma.com">a.ceyhan@goldverikurtarma.com</a></p>
+      <nav aria-label="Footer">
+        <a href="https://github.com/datarecoveryexpert/shelfdeck">GitHub</a>
+        <a href="https://www.goldverikurtarma.com">goldverikurtarma.com</a>
+        <a href="https://github.com/datarecoveryexpert/shelfdeck/blob/main/SECURITY.md">Security</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
