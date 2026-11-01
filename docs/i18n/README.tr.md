@@ -128,7 +128,7 @@ ShelfDeck, düz yıldız listesinin yerine gerçekten gezinebileceğiniz bir kü
 
 1. **Çıkarma.** Projenin özel sosyal önizlemesi ve README banner'ları; hazır şablon kartlar ve rozetler elenir.
 2. **Procedural.** *Criterion Dev*, *Terminal Blueprint* ve *Model Spec Card* gibi temalarda, deterministik ve maliyetsiz SVG posterler.
-3. **Yapay zekâ.** Zaten ödediğiniz `codex` veya `gemini` CLI aboneliği yerel köprü üzerinden ya da OpenAI, Gemini, fal.ai, Replicate, Together AI veya yerel ComfyUI için kendi anahtarınız.
+3. **Yapay zekâ.** Zaten abone olduğunuz bir yapay zekâ komut satırı aracı yerel köprü üzerinden ya da kendi görsel üretim API anahtarınız veya yerel GPU kurulumunuz.
 
 <table>
   <tr>
@@ -147,7 +147,7 @@ flowchart LR
         Ext["Browser extension"]
     end
     Local[("Local DB<br/>IndexedDB / SQLite")]
-    Bridge["Local CLI bridge<br/>codex · gemini"]
+    Bridge["Local AI CLI bridge"]
     BYOK["Image APIs (BYOK)"]
     subgraph GH["Your GitHub account (optional)"]
         Vault["shelfdeck-vault"]
@@ -194,7 +194,7 @@ shelfdeck/
 │   ├── core/           # Kaynak ayrıştırıcılar, Zod şemaları, dışa aktarıcılar
 │   ├── sync-engine/    # Git Trees API senkronizasyonu, fark ve birleştirme
 │   ├── cover-engine/   # Procedural posterler ve yapay zekâ sağlayıcı adaptörleri
-│   ├── local-bridge/   # Yerel codex / gemini köprüsü (Node CLI)
+│   ├── local-bridge/   # Yerel yapay zekâ CLI köprüsü (Node CLI)
 │   └── ui/             # Tasarım token'ları ve poster bileşenleri
 ├── templates/vault-starter/
 └── docs/

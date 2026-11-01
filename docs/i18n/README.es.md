@@ -128,7 +128,7 @@ La mayoría de los repositorios no tienen póster, así que ShelfDeck se los cre
 
 1. **Extracción.** Vistas previas sociales personalizadas e imágenes de cabecera de los README, descartando tarjetas genéricas e insignias.
 2. **Procedural.** Pósteres SVG deterministas y sin coste, con temas como *Criterion Dev*, *Terminal Blueprint* y *Model Spec Card*.
-3. **IA.** Tu suscripción actual a la CLI de `codex` o `gemini` a través de un puente local, o tu propia clave de OpenAI, Gemini, fal.ai, Replicate, Together AI o un ComfyUI local.
+3. **IA.** Una herramienta de IA de línea de comandos que ya pagas, a través de un puente local, o tu propia clave de API de generación de imágenes o una GPU local.
 
 <table>
   <tr>
@@ -147,7 +147,7 @@ flowchart LR
         Ext["Browser extension"]
     end
     Local[("Local DB<br/>IndexedDB / SQLite")]
-    Bridge["Local CLI bridge<br/>codex · gemini"]
+    Bridge["Local AI CLI bridge"]
     BYOK["Image APIs (BYOK)"]
     subgraph GH["Your GitHub account (optional)"]
         Vault["shelfdeck-vault"]
@@ -194,7 +194,7 @@ shelfdeck/
 │   ├── core/           # Source parsers, Zod schemas, exporters
 │   ├── sync-engine/    # Git Trees API sync, diff and merge
 │   ├── cover-engine/   # Procedural posters and AI provider adapters
-│   ├── local-bridge/   # Node CLI bridging local codex / gemini
+│   ├── local-bridge/   # Node CLI bridging local AI CLIs
 │   └── ui/             # Design tokens and poster primitives
 ├── templates/vault-starter/
 └── docs/

@@ -128,7 +128,7 @@ Most repositories have no poster art, so ShelfDeck makes some. Every cover is pr
 
 1. **Extract.** Custom social previews and README hero images, with generic boilerplate cards and badges filtered out.
 2. **Procedural.** Deterministic, zero-cost SVG posters in themes such as *Criterion Dev*, *Terminal Blueprint* and *Model Spec Card*.
-3. **AI.** Your existing `codex` or `gemini` CLI subscription through a local bridge, or your own key for OpenAI, Gemini, fal.ai, Replicate, Together AI or a local ComfyUI.
+3. **AI.** An AI command-line tool you already subscribe to, through a local bridge, or your own image-generation API key or local GPU setup.
 
 <table>
   <tr>
@@ -147,7 +147,7 @@ flowchart LR
         Ext["Browser extension"]
     end
     Local[("Local DB<br/>IndexedDB / SQLite")]
-    Bridge["Local CLI bridge<br/>codex · gemini"]
+    Bridge["Local AI CLI bridge"]
     BYOK["Image APIs (BYOK)"]
     subgraph GH["Your GitHub account (optional)"]
         Vault["shelfdeck-vault"]
@@ -194,7 +194,7 @@ shelfdeck/
 │   ├── core/           # Source parsers, Zod schemas, exporters
 │   ├── sync-engine/    # Git Trees API sync, diff and merge
 │   ├── cover-engine/   # Procedural posters and AI provider adapters
-│   ├── local-bridge/   # Node CLI bridging local codex / gemini
+│   ├── local-bridge/   # Node CLI bridging local AI CLIs
 │   └── ui/             # Design tokens and poster primitives
 ├── templates/vault-starter/
 └── docs/

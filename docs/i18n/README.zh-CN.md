@@ -128,7 +128,7 @@ ShelfDeck 用一个真正值得翻阅的资料库，取代那份平铺直叙的�
 
 1. **提取。** 使用自定义的社交预览图和 README 头图，并过滤掉千篇一律的模板卡片和徽章。
 2. **程序化生成。** 确定性、零成本的 SVG 海报，提供 *Criterion Dev*、*Terminal Blueprint* 和 *Model Spec Card* 等主题。
-3. **AI 生成。** 通过本地桥接使用你现有的 `codex` 或 `gemini` CLI 订阅，或者使用你自己的 OpenAI、Gemini、fal.ai、Replicate、Together AI 密钥，也可以接入本地 ComfyUI。
+3. **AI 生成。** 通过本地桥接使用你已订阅的 AI 命令行工具，或者使用你自己的图像生成 API 密钥，也可以接入本地 GPU。
 
 <table>
   <tr>
@@ -147,7 +147,7 @@ flowchart LR
         Ext["Browser extension"]
     end
     Local[("Local DB<br/>IndexedDB / SQLite")]
-    Bridge["Local CLI bridge<br/>codex · gemini"]
+    Bridge["Local AI CLI bridge"]
     BYOK["Image APIs (BYOK)"]
     subgraph GH["Your GitHub account (optional)"]
         Vault["shelfdeck-vault"]
@@ -194,7 +194,7 @@ shelfdeck/
 │   ├── core/           # Source parsers, Zod schemas, exporters
 │   ├── sync-engine/    # Git Trees API sync, diff and merge
 │   ├── cover-engine/   # Procedural posters and AI provider adapters
-│   ├── local-bridge/   # Node CLI bridging local codex / gemini
+│   ├── local-bridge/   # Node CLI bridging local AI CLIs
 │   └── ui/             # Design tokens and poster primitives
 ├── templates/vault-starter/
 └── docs/

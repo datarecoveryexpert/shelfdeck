@@ -128,7 +128,7 @@ ShelfDeck は、のっぺりとしたスター一覧を、実際に眺めたく�
 
 1. **抽出。** カスタムのソーシャルプレビュー画像や README のヒーロー画像を使います。汎用的な定型カードやバッジは除外します。
 2. **プロシージャル。** 決定論的でコストゼロの SVG ポスター。*Criterion Dev*、*Terminal Blueprint*、*Model Spec Card* などのテーマがあります。
-3. **AI。** ローカルブリッジ経由で手持ちの `codex` や `gemini` CLI のサブスクリプションを使うか、OpenAI、Gemini、fal.ai、Replicate、Together AI の自前のキー、あるいはローカルの ComfyUI を利用します。
+3. **AI。** ローカルブリッジ経由で契約済みの AI コマンドラインツールを使うか、自前の画像生成 API キー、あるいはローカル GPU 環境を利用します。
 
 <table>
   <tr>
@@ -147,7 +147,7 @@ flowchart LR
         Ext["Browser extension"]
     end
     Local[("Local DB<br/>IndexedDB / SQLite")]
-    Bridge["Local CLI bridge<br/>codex · gemini"]
+    Bridge["Local AI CLI bridge"]
     BYOK["Image APIs (BYOK)"]
     subgraph GH["Your GitHub account (optional)"]
         Vault["shelfdeck-vault"]
@@ -194,7 +194,7 @@ shelfdeck/
 │   ├── core/           # Source parsers, Zod schemas, exporters
 │   ├── sync-engine/    # Git Trees API sync, diff and merge
 │   ├── cover-engine/   # Procedural posters and AI provider adapters
-│   ├── local-bridge/   # Node CLI bridging local codex / gemini
+│   ├── local-bridge/   # Node CLI bridging local AI CLIs
 │   └── ui/             # Design tokens and poster primitives
 ├── templates/vault-starter/
 └── docs/

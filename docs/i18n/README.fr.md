@@ -128,7 +128,7 @@ La plupart des dépôts n'ont pas d'affiche, alors ShelfDeck en fabrique. Chaque
 
 1. **Extraction.** Aperçus sociaux personnalisés et images d'en-tête des README, en écartant les cartes génériques et les badges.
 2. **Procédural.** Des affiches SVG déterministes et gratuites, avec des thèmes comme *Criterion Dev*, *Terminal Blueprint* et *Model Spec Card*.
-3. **IA.** Votre abonnement existant à la CLI `codex` ou `gemini` via un pont local, ou votre propre clé pour OpenAI, Gemini, fal.ai, Replicate, Together AI ou un ComfyUI local.
+3. **IA.** Un outil d'IA en ligne de commande auquel vous êtes déjà abonné, via un pont local, ou votre propre clé d'API de génération d'images ou un GPU local.
 
 <table>
   <tr>
@@ -147,7 +147,7 @@ flowchart LR
         Ext["Browser extension"]
     end
     Local[("Local DB<br/>IndexedDB / SQLite")]
-    Bridge["Local CLI bridge<br/>codex · gemini"]
+    Bridge["Local AI CLI bridge"]
     BYOK["Image APIs (BYOK)"]
     subgraph GH["Your GitHub account (optional)"]
         Vault["shelfdeck-vault"]
@@ -194,7 +194,7 @@ shelfdeck/
 │   ├── core/           # Source parsers, Zod schemas, exporters
 │   ├── sync-engine/    # Git Trees API sync, diff and merge
 │   ├── cover-engine/   # Procedural posters and AI provider adapters
-│   ├── local-bridge/   # Node CLI bridging local codex / gemini
+│   ├── local-bridge/   # Node CLI bridging local AI CLIs
 │   └── ui/             # Design tokens and poster primitives
 ├── templates/vault-starter/
 └── docs/
